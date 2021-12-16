@@ -4,6 +4,8 @@ import (
 	"fmt"
 )
 
+var car int
+
 func main() {
 	// Declerations
 	//Type 1 Dec
