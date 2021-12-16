@@ -4,45 +4,45 @@ import (
 	"fmt"
 )
 
-func addition(x, y int) int {
-	a := x + y
-	return a
+func addition(num1, num2 int) int {
+	temp := num1 + num2
+	return temp
 }
-func substraction(x, y int) int {
-	a := x - y
-	return a
+func substraction(num1, num2 int) int {
+	temp := num1 - num2
+	return temp
 }
-func division(x, y int) int {
-	a := x / y
-	return a
+func division(num1, num2 int) int {
+	temp := num1 / num2
+	return temp
 }
-func multiplication(x, y int) int {
-	a := x * y
-	return a
+func multiplication(num1, num2 int) int {
+	temp := num1 * num2
+	return temp
 }
 func main() {
 	fmt.Println("Welcome to the Calculator : ")
 	fmt.Println("Press 1 for addition " + "\n" + "Press 2 for substraction " + "\n" + "Press 3 for multiplication " + "\n" + "Press 4 for division " + "\n")
-	flag := true
-	for flag != false {
+	calculatorSwitch := true
+	for calculatorSwitch != false {
 		var i int
 		fmt.Println("Choose Option from above :")
 		fmt.Scanln(&i)
 		fmt.Println("Input 2 numbers")
-		var a, b int
-		fmt.Scanln(&a, &b)
+		var num1, num2 int
+		fmt.Scanln(&num1, &num2)
 		if i == 1 {
-			c := addition(a, b)
-			fmt.Println(c)
+			ans := addition(num1, num2)
+			fmt.Println(ans)
 		} else if i == 2 {
-			c := substraction(a, b)
-			fmt.Println(c)
+			ans := substraction(num1, num2)
+			fmt.Println(ans)
 		} else if i == 3 {
-			c := multiplication(a, b)
-			fmt.Println(c)
+			ans := multiplication(num1, num2)
+			fmt.Println(ans)
 		} else if i == 4 {
-			c := division(a, b)
-			fmt.Println(c)
+			ans := division(num1, num2)
+			fmt.Println(ans)
 		} else {
 			fmt.Println("Value Entered is Wrong")
 		}
@@ -51,9 +51,9 @@ func main() {
 		var ask int
 		fmt.Scanln(&ask)
 		if ask == 1 {
-			flag = true
+			calculatorSwitch = true
 		} else {
-			flag = false
+			calculatorSwitch = false
 		}
 	}
 }
