@@ -8,6 +8,6 @@ func main() {
 	var (
 		a, b (int) = 1, 2 //
 	)
-	fmt.Println((a, b))
+	fmt.Println(a, b, car)
 	fmt.Println((a, b))
 }
