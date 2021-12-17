@@ -8,12 +8,12 @@ import (
 
 func main() {
 	//Practising slice :-
-	/*cards := []string{}
+	cards := []string{}
 	for i := 0; i < 3; i++ {
 		var a string
 		fmt.Scanln(&a)
 		cards = append(cards, a)
-	}*/
+	}
 	/*for i, x := range cards {
 		fmt.Println(i, x)
 	}*/
