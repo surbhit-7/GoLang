@@ -26,5 +26,5 @@ func (p person) print() {
 	log.Println(p)
 }
 func (updateNamePtr *person) updateName(name string) {
-	updateNamePtr.firstName = name
+	(*updateNamePtr).firstName = name
 }
