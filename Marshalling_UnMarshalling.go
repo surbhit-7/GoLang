@@ -30,10 +30,13 @@ func main() {
 */
 func main() {
 	JsonString := `{"name":"Surbhit Vishwakarma" , "height" : 6}`
+
 	var person map[string]interface{}
+
 	err := json.Unmarshal([]byte(JsonString), &person)
 	if err != nil {
 		fmt.Println(err)
 	}
+
 	fmt.Println(person)
 }
