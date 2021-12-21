@@ -8,6 +8,7 @@ import (
 type hand string
 
 func chooseHand(i int) hand {
+	
 	if i == 1 {
 		return "Stone"
 	} else if i == 2 {

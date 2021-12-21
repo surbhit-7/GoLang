@@ -33,8 +33,8 @@ func main() {
 		computerHandVal := computerHand.Result()
 
 		result := Decider(PlayerHandVal, computerHandVal)
-		fmt.Println("\nAnd The Winner of the Game is : ", result)
-		fmt.Println("Do you wish to Play again press 1 :")
+		log.Println("\nAnd The Winner of the Game is : ", result)
+		log.Println("Do you wish to Play again press 1 :")
 		fmt.Scanln(&switchN)
 
 		if switchN != 1 {

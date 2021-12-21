@@ -30,24 +30,24 @@ func main() {
 		log.Println("Choose Option from above :")
 		fmt.Scanln(&i)
 
-		fmt.Println("Input 2 numbers")
+		log.Println("Input 2 numbers")
 		var num1, num2 int
 		fmt.Scanln(&num1, &num2)
 
 		if i == 1 {
 			ans := add1(num1, num2)
-			fmt.Println(ans)
+			log.Println(ans)
 		} else if i == 2 {
 			ans := substract(num1, num2)
-			fmt.Println(ans)
+			log.Println(ans)
 		} else if i == 3 {
 			ans := multiply(num1, num2)
-			fmt.Println(ans)
+			log.Println(ans)
 		} else if i == 4 {
 			ans := division(num1, num2)
-			fmt.Println(ans)
+			log.Println(ans)
 		} else {
-			fmt.Println("Value Entered is Wrong")
+			log.Println("Value Entered is Wrong")
 		}
 
 		log.Println("\n")

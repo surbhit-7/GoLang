@@ -33,10 +33,13 @@ func say(s string) {
 }
 
 func main() {
+
 	wg.Add(1)
 	go say("hello")
+
 	wg.Add(1)
 	go say("hi")
+
 	wg.Wait()
 
 	//time.Sleep(time.Millisecond * 3000)
