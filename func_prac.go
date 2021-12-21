@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"log"
+)
 
 // FUNC 1
 // CALL BY VALUE
@@ -17,13 +20,14 @@ func sw(x, y *int) {
 }
 func main() {
 	var a, b int
+
 	fmt.Scanln(&a, &b)
-	fmt.Println(adds(a, b))
+	log.Println(adds(a, b))
 
 	k := 2
 	l := 3
-	fmt.Println("Before Swaps : ", k, l)
+	log.Println("Before Swaps : ", k, l)
 
 	sw(&k, &l)
-	fmt.Println("after Swaps : ", k, l)
+	log.Println("after Swaps : ", k, l)
 }

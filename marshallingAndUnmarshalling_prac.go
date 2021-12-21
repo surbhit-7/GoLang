@@ -29,11 +29,15 @@ type Person struct {
 }
 
 func main() {
+
 	JsonString := `{"name":"Surbhit Vishwakarma" , "height" : 6}`
+
 	var person Person
 	err := json.Unmarshal([]byte(JsonString), &person)
+
 	if err != nil {
 		fmt.Println(err)
 	}
+
 	fmt.Println(person)
 }

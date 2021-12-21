@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 type person struct {
 	firstName string
 	lastName  string
@@ -9,5 +7,5 @@ type person struct {
 
 func main() {
 	boy := person{lastName: "Vishwakarma", firstName: "Surbhit"}
-	fmt.Println(boy)
+	log.Println(boy)
 }

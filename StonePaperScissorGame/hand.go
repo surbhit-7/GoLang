@@ -19,8 +19,10 @@ func chooseHand(i int) hand {
 	}
 }
 func choosingComputersHand() hand {
+
 	rand.Seed(time.Now().UnixNano())
 	RandNum := rand.Intn(100)
+
 	if (RandNum%3 + 1) == 1 {
 		return "Stone"
 	} else if (RandNum%3 + 1) == 2 {
@@ -28,8 +30,10 @@ func choosingComputersHand() hand {
 	} else {
 		return "Scissor"
 	}
+
 }
 func (h hand) Result() int {
+
 	if h == "Stone" {
 		return 1
 	} else if h == "Paper" {
@@ -37,8 +41,10 @@ func (h hand) Result() int {
 	} else {
 		return 3
 	}
+
 }
 func Decider(i, j int) hand {
+
 	if (i == 1 && j == 2) || (i == 2 && j == 3) || (i == 3 && j == 1) {
 		return "Computer"
 	} else if (j == 1 && i == 2) || (j == 2 && i == 3) || (j == 3 && i == 1) {
@@ -46,4 +52,5 @@ func Decider(i, j int) hand {
 	} else {
 		return "Draw"
 	}
+
 }
