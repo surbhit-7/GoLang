@@ -1,0 +1,2 @@
+New Logger : 2021/12/21 11:36:53 /home/surbhit/Desktop/GoLangPrac/loggging_prac.go:18: HEllo World
+New Logger : 2021/12/21 11:38:11 /home/surbhit/Desktop/GoLangPrac/loggging_prac.go:20: HEllo World

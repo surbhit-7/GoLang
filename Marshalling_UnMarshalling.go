@@ -23,20 +23,17 @@ func main() {
 	}
 	fmt.Println(string(byteArray))
 }*/
-/*type Person struct {
+type Person struct {
 	Name   string `json:"name"`
 	Height int    `json:"height"`
 }
-*/
+
 func main() {
 	JsonString := `{"name":"Surbhit Vishwakarma" , "height" : 6}`
-
-	var person map[string]interface{}
-
+	var person Person
 	err := json.Unmarshal([]byte(JsonString), &person)
 	if err != nil {
 		fmt.Println(err)
 	}
-
 	fmt.Println(person)
 }
