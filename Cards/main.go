@@ -7,5 +7,5 @@ func main() {
 	remainingCards.print()*/
 	/*cards.toString()
 	fmt.Println(cards)*/
-	cards.saveToFile("my_cards")
+	cards.saveToFile("my-cards")
 }
