@@ -30,3 +30,6 @@ func (spanishBot) getGreeting() string {
 
 	return "OLA"
 }
+func main() {
+	log.
+}
